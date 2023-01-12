@@ -1,6 +1,6 @@
 
 [Default Applications]
-application/pdf=evince.desktop
+application/pdf=org.gnome.Evince.desktop
 image/jpeg=shotwell.desktop
 image/png=shotwell.desktop
 application/json=emacs.desktop
