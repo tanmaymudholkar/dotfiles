@@ -1,4 +1,4 @@
-(setq default-frame-alist '((font . "JetBrains Mono-9")))
+(setq default-frame-alist '((font . "JetBrains Mono-13")))
 
 ;; tabs are evil
 (setq-default indent-tabs-mode nil)
