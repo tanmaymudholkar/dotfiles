@@ -1,0 +1,22 @@
+# remap prefix from 'C-b' to 'C-x'
+unbind C-b
+set-option -g prefix C-x
+bind-key C-x send-prefix
+
+# Set bash as the default shell
+set-option -g default-command "exec /bin/bash"
+
+# Some emacs-style shortcuts
+bind 3 split-window -h
+unbind '"'
+bind 2 split-window -v
+unbind %
+bind -n S-Left select-pane -L
+bind -n S-Right select-pane -R
+bind -n S-Up select-pane -U
+bind -n S-Down select-pane -D
+bind k kill-pane
+unbind x
+
+# Enable mouse scrolling
+set -g mouse-mode on
