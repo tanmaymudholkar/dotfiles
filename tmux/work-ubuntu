@@ -19,4 +19,4 @@ bind k kill-pane
 unbind x
 
 # Enable mouse scrolling
-set -g mouse-mode on
+set -g mouse on
