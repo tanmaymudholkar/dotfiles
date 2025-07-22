@@ -124,10 +124,10 @@
  ;; If there is more than one, they won't work right.
  '(ein:output-area-inlined-images t)
  '(mailcap-user-mime-data
-   '(("evince %s" "application/pdf" nil)
-     ("shotwell %s" "image/png" nil)))
+   '(("evince %s" "application/pdf" nil) ("shotwell %s" "image/png" nil)))
  '(package-selected-packages
-   '(elpy auto-complete ein zenburn-theme highlight-parentheses paredit)))
+   '(auto-complete ein elpy highlight-parentheses paredit
+                   stickyfunc-enhance zenburn-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
