@@ -1,6 +1,6 @@
 ;; (setq visible-bell 1)
 
-(setq default-frame-alist '((font . "JetBrains Mono-9")))
+(setq default-frame-alist '((font . "JetBrains Mono-12")))
 
 ;; tabs are evil
 (setq-default indent-tabs-mode nil)
