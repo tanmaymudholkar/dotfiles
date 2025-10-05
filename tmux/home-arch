@@ -3,8 +3,8 @@ unbind C-b
 set-option -g prefix C-x
 bind-key C-x send-prefix
 
-# Set bash as the default shell
-set-option -g default-command "exec /bin/bash"
+# Set user shell as the default
+set-option -g default-shell ${SHELL}
 
 # Some emacs-style shortcuts
 bind 3 split-window -h
