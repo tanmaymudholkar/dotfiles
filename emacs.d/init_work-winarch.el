@@ -4,6 +4,8 @@
 
 (setq default-frame-alist '((font . "JetBrains Mono-9")))
 
+(setq vc-handled-backends nil)
+
 ;; (setq abbrev-file-name             ;; tell emacs where to read abbrev
 ;;       "~/.emacs.d/abbrev_defs")    ;; definitions from...
 
