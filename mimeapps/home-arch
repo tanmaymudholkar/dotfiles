@@ -8,3 +8,4 @@ x-scheme-handler/unknown=google-chrome.desktop
 application/pdf=org.gnome.Evince.desktop
 image/jpeg=shotwell.desktop
 image/png=shotwell.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
