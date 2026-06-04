@@ -52,10 +52,6 @@
 ;; (setq TeX-save-query nil)
 ;; (setq TeX-PDF-mode t)
 
-(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
-(semantic-mode 1)
-(require 'stickyfunc-enhance)
-
 (require 'ido)
 (ido-mode t)
 
@@ -117,6 +113,8 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
+(when (require 'gnu-elpa-keyring-update nil t)
+    (gnu-elpa-keyring-update))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -135,11 +133,15 @@
  ;; If there is more than one, they won't work right.
  )
 
-(require 'highlight-parentheses)
-(highlight-parentheses-mode 1)
+(add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
+(semantic-mode 1)
+(require 'stickyfunc-enhance nil t)
+
+(when (require 'highlight-parentheses nil t)
+  (highlight-parentheses-mode 1))
 
 (autoload 'enable-paredit-mode "paredit"
   "Turn on pseudo-structural editing of Lisp code."
   t)
 
-(load-theme 'zenburn t)
+(ignore-errors (load-theme 'zenburn t))
